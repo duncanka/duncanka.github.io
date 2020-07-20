@@ -1,0 +1,105 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@import "jekyll-theme-prologue";
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
+
+#nav /*body, h1, h2, h3, h4, h5, h6, strong, b*/ {
+	font-weight: 400;
+}
+
+h3 {
+	font-size: 1.2em;
+}
+
+hr {
+	width: 30%;
+	margin-top: 2em;
+	border-top-color: #bbb8;
+}
+
+.item {
+	box-shadow: 0 0.05em 0.2em 0 rgba(0, 0, 0, 0.1);
+
+	header {
+		font-size: inherit;
+	}
+
+	.itemtext {
+		font-size: 0.9em;
+		padding: 1em 1em 0.4em;
+		line-height: 1.3em;
+	}
+
+}
+
+#main {
+	> section, article {
+		&.cover {
+			img.back {
+				object-position: 35% 70%;
+			}
+		}
+	
+		&.shade-one {
+			background-color: #222629;
+		}
+
+		&:not(.cover) :not(header) {
+			> h1, > h2, > h3, > h4, > h5, > h6 {
+				margin-bottom: 0.5em;
+				margin-top: 1.25em;
+				text-align: center;
+			}
+		} 
+	}
+
+	> section .section-content {
+		text-align: left;
+	
+		p {
+			margin-bottom: 0.6em;
+			line-height: 1.4em;
+		}
+	}
+}
+
+strong, b {
+	font-weight: 400;
+	color: #888;
+}
+
+dl {
+	dt {
+		font-weight: 400;
+		color: #777;
+		margin-bottom: 0.25em;
+	}
+	dd {
+		margin-bottom: 1em;
+	}
+}
+
+#intro-text {
+	background-color: #22262999; 
+	padding: 15px 30px 5px;
+	border-radius: 5%;
+
+	p {
+		margin-top: 1.5em;
+	}
+}
+
+.link-icon {
+    margin-right: .2em;
+    vertical-align: middle
+}
+
+.pub-list {
+	font-size: 0.8em;
+	line-height: 1.3em;
+
+	li {
+		margin-bottom: 0.7em;
+	}
+} 
