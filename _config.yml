@@ -21,7 +21,7 @@ social_newtabs: true
 social_tooltips: true
 
 # Google Analytics Tracking ID goes here:
-google_analytics:
+google_analytics: "UA-51812561-2"
 
 remote_theme: duncanka/jekyll-theme-prologue
 collections: [sections]
