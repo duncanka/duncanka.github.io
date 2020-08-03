@@ -4,7 +4,7 @@ description: AI researcher/consultant, science communication trainer, science wr
 author: Jesse Dunietz
 email: yavyash@gmail.com
 avatar: assets/images/avatar.jpg
-avatar_roundness: 20 # Can be 0 (sharp square) to 50 (circle); anything above is equivalent to 50.
+avatar_roundness: 0 # Can be 0 (sharp square) to 50 (circle); anything above is equivalent to 50.
 
 # You'll want to customize url and baseurl for your own site:
 baseurl: "" # the subpath of your site, e.g. /blog
