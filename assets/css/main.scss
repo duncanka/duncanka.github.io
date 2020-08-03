@@ -102,20 +102,21 @@ hr {
 			line-height: 1.4em;
 		}
 	}
-
-	div .no-mobile {
-		@include breakpoint(mobile) {
-			display: none;
-		}	
-	}
-
-	div .mobile-only {
-		display: none;
-		@include breakpoint(mobile) {
-			display: block;
-		}	
-	}
 }
+
+div .no-mobile {
+	@include breakpoint(mobile) {
+		display: none;
+	}	
+}
+
+div .mobile-only {
+	display: none;
+	@include breakpoint(mobile) {
+		display: block;
+	}	
+}
+
 
 strong, b {
 	font-weight: 400;
