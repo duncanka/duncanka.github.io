@@ -41,6 +41,10 @@ hr {
 					object-position: 20% -30px;
 				}
 			}
+
+			@include breakpoint(mobile) {
+				padding: 17vw 0em;
+			}
 		}
 	
 		&.shade-one {
