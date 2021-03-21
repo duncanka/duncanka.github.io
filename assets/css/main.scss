@@ -9,7 +9,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #333;
+	color: #333;
 }
 
 #nav /*body, h1, h2, h3, h4, h5, h6, strong, b*/ {
@@ -39,6 +39,11 @@ hr {
 		line-height: 1.3em;
 	}
 }
+
+input[type="button"], input[type="submit"], input[type="reset"], button, .button {
+	font-weight: 400;
+}
+
 
 #main {
 	> section, article {
