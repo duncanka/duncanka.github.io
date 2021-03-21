@@ -4,6 +4,14 @@
 @import "jekyll-theme-prologue";
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
 
+body {
+	color: #555;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+}
+
 #nav /*body, h1, h2, h3, h4, h5, h6, strong, b*/ {
 	font-weight: 400;
 }
@@ -46,7 +54,7 @@ hr {
 				padding: 17vw 0em;
 			}
 		}
-	
+
 		&.shade-one {
 			background-color: #222629;
 		}
@@ -62,20 +70,20 @@ hr {
 		ul.pub-list {
 			font-size: 0.8em;
 			line-height: 1.3em;
-		
+
 			li {
 				margin-bottom: 0.7em;
 			}
-		}		
+		}
 
 		.intro-text {
-			background-color: #22262999; 
+			background-color: #222629bb;
 			padding: 15px 30px 5px;
-		
+
 			p {
 				margin-top: 1.5em;
 			}
-		
+
 			@include breakpoint(mobile) {
 				margin-top: 0px;
 				margin-bottom: 0px;
@@ -85,7 +93,7 @@ hr {
 				p {
 					margin-bottom: 0em;
 				}
-		
+
 				h2 {
 					margin-top: 0px;
 					margin-bottom: 0px;
@@ -96,7 +104,7 @@ hr {
 
 	> section .section-content {
 		text-align: left;
-	
+
 		p {
 			margin-bottom: 0.6em;
 			line-height: 1.4em;
@@ -107,20 +115,20 @@ hr {
 div .no-mobile {
 	@include breakpoint(mobile) {
 		display: none;
-	}	
+	}
 }
 
 div .mobile-only {
 	display: none;
 	@include breakpoint(mobile) {
 		display: block;
-	}	
+	}
 }
 
 
 strong, b {
 	font-weight: 400;
-	color: #888;
+	color: #444;
 }
 
 dl {
