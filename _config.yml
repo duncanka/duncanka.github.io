@@ -24,6 +24,8 @@ social_tooltips: true
 # Google Analytics Tracking ID goes here:
 google_analytics: "UA-51812561-2"
 
+plugins:
+  - jekyll-remote-theme
+
 remote_theme: duncanka/jekyll-theme-prologue
 collections: [sections]
-
