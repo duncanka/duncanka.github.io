@@ -4,8 +4,10 @@
 @import "jekyll-theme-prologue";
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
 
+$body-color: #555;
+
 body {
-	color: #555;
+	color: $body-color;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,6 +27,15 @@ hr {
 	margin-top: 2em;
 	border-top-color: #bbb8;
 }
+
+ul {
+	list-style-type: square;
+}
+
+li::marker {
+	color: lighten($body-color, 30%);
+}
+
 
 .item {
 	box-shadow: 0 0.05em 0.2em 0 rgba(0, 0, 0, 0.1);
@@ -114,6 +125,12 @@ input[type="button"], input[type="submit"], input[type="reset"], button, .button
 			margin-bottom: 0.6em;
 			line-height: 1.4em;
 		}
+
+		h3 + .row {
+			@include breakpoint(mobile) {
+				margin-top: 0px;
+			}
+		}
 	}
 }
 
@@ -153,7 +170,8 @@ dl {
 }
 
 .warning {
-	font-weight: bolder;
+	font-weight: lighter;
+	font-size: smaller;
 }
 /*
 .small-header {
