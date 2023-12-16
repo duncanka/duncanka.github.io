@@ -36,6 +36,10 @@ li::marker {
 	color: lighten($body-color, 30%);
 }
 
+a {
+	border-bottom: dotted 1px rgba(128, 128, 128, 0.8);
+}
+
 
 .item {
 	box-shadow: 0 0.05em 0.2em 0 rgba(0, 0, 0, 0.1);
